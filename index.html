@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web player: Music For Everyone</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+
+        <!-- LEFT CONTAINER -->
+        <div class="left bg-black m-2 p-2">
+            <img class="invert cross" src="svgfiles/cross.svg" alt="">
+            
+            <!-- HOME -->
+            <div class="home rounded bg-grey m-1 p-1">
+                <div class="flex font"><img class="logo invert" src="svgfiles/logo.svg" alt="logo">
+                    
+                
+                </div>
+                <ul>
+                    <li><img class="invert homeimg" src="svgfiles/home.svg" alt="home">Home</li>
+                    <li><img class="invert searchimg" src="svgfiles/search.svg" alt="home">Search</li>
+                </ul>
+            </div>
+
+
+            <!-- LIBRARY -->
+            <div class="library rounded bg-grey m-1 p-1">
+
+                <!-- /*HEADING*/ -->
+                <div class="heading">
+                    <img class="invert" src="svgfiles/playlist.svg" alt="">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+
+                <div class="songList flex">
+                    <ul>
+                    </ul>
+                </div>
+
+                <!-- /*FOOTER*/ -->
+                <div class="footer flex">
+                    <div>
+                        <a href="https://www.spotify.com/us/legal/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Legal</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/privacy/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Privacy Center</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/legal/privacy-policy/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Privacy Policy</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/legal/cookies-policy/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Cookies</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/legal/privacy-policy/#s3" id="" class="" data-encore-id="textLink"><span data-encore-id="type">About Ads</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/accessibility/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Accessibility</span></a>
+                    </div>
+                    <div>
+                        <a href="https://www.spotify.com/us/legal/notice-at-collection/" id="" class="" data-encore-id="textLink"><span data-encore-id="type">Notice at Collection</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+            
+        <!-- /*RIGHT CONTAINER*/ -->
+        <div class="container right rounded bg-grey margin">
+            <div class="header">
+                <div class="navBar flex">
+                    
+                    <img class="invert hamburger" src="svgfiles\menu.svg" alt="">
+                    
+                    <div class="leftright">
+                        <img class="invert img" src="svgfiles/Left.svg" alt="">
+                        <img class="invert img" src="svgfiles/Right.svg" alt="">
+                    </div>
+                
+                    <div class="Navbuttons rounded bg-grey m-1 p-1">
+                        <button class="Signup">Sign up</button>
+                        <button class="login">Log in</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PLAYLISTS -->
+            <div class="spotifyPlaylists">
+                <h1 class="spotplay">Spotify Playlists</h1>
+
+                <!-- CARD CONTAINER! -->
+                <div class="cardContainer">
+                
+
+                </div>
+
+                <!-- PLAYBAR! -->
+                <div class="playbar">
+                    <div class="seekbar">
+                        <div class="circle">
+                            
+                        </div>
+                    </div>
+                    <div class="abovebar">
+                        <div class="songinfo">
+                            
+                        </div>
+                        <div class="songbuttons">
+                            <img id="btnPrev" src=".\PNGIcons\previous.png" alt="">
+                            <img id="btnPlay" src=".\PNGIcons\Play.png" alt="">
+                            <img id="btnNext" src=".\PNGIcons\next-button.png" alt="">
+                        </div>
+                        <div class="TimeVolume">
+                            <div class="songtime"></div>
+                            <div>
+                                <img id="volume" src="../svgfiles/volume.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
