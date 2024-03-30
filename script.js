@@ -20,7 +20,7 @@ function secondsToMinutesAndSeconds(seconds) {
 async function getSongs(folder) {
   currFolder = folder;
   //fetching songs from directory through live http request
-  let a = await fetch(`http://127.0.0.1:5500/${folder}/`);
+  let a = await fetch(`https://kushdev19.github.io/${folder}/`);
 
   //convert http req to text
   let response = await a.text();
